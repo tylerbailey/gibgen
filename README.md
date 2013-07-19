@@ -48,7 +48,7 @@ Question 1: "How did you approach the problem?" (500 words or less)
 
 
 
-Question 2: "What difficulties did you encounter in arriving at the solution?" (500 words or less)
+Question 2: "What was the most difficult aspect of the solution?" (500 words or less)
 
 
 
