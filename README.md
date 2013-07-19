@@ -10,28 +10,43 @@ We are exticed taht you are intsereted in joiinng the GE Soawtfre Engreeniing Ap
 
 Other helpful information:
 * You may use any programming language of your choice
-* Name your program as follows: _“GibberishGen\_FirstName\_LastName”_
-* Upload your files (Page 2 of this doc… and your program)  to the following location: TBD
+* Name your program as follows: _`gibgen.xx`_ (where xx is variable based on the language you choose)
+* Your program should be able to read text input from a plain text file passed as an argument **or** a string passed directly
+   * `gibgen.xx "This is a String"`
+   * `gibgen.xx -f mystringfile.txt`
+   * `cat mystringfile.txt | gibgen.xx`
+
 
 Learn more about the application process [here](http://gecapital.com/sweap "SWEAP Home Page").
 
 What to do
 ----------
-1. Fork this project
-2. When you submit your cover letter, include the URL to your fork'd repository 
-   
-(i.e. "github.com/ __your\_username\_here__/cc-gegibgen")
+1. Fork this project & clone your new fork'd repository
+2. Complete the code challenge and fill out the Quick Start & Questions in the the README (see below)
+3. Push your code and README back to github
+3. When you submit your cover letter, include the URL to your fork'd repository (i.e. "github.com/ __your\_username\_here__/cc-gegibgen")
 
-3. This
-4. That
+_Note: If you already submitted your application, ... will add instructions here._
+
+=================================
+
+Quick Start
+-----------
+
+* Replace this text with instructions on how to execute your program
+* Also tell us anything else the reviewer should know about your code
 
 
-Questions
----------
+Coding Questions
+----------------
 
 Question 1: "How did you approach the problem?" (500 words or less)
 
 
 
 Question 2: "What difficulties did you encounter in arriving at the solution?" (500 words or less)
+
+
+
+
 
