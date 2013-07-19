@@ -21,10 +21,14 @@ Learn more about the application process [here](http://gecapital.com/sweap "SWEA
 
 What to do
 ----------
-1. Fork this project & clone your new fork'd repository
-2. Complete the code challenge and fill out the Quick Start & Questions in the the README (see below)
-3. Push your code and README back to github
-3. When you submit your cover letter, include the URL to your fork'd repository (i.e. "github.com/ __your\_username\_here__/cc-gegibgen")
+1. [Download](http://git-scm.com/downloads) & install Git on your machine
+2. [Fork](https://help.github.com/articles/fork-a-repo) this project
+2. Clone your new fork'd repository to your local machine - `git clone https://github.com/YOUR_USERNAME_HERE/cc-gegibgen.git`
+3. Complete the code challenge and fill out the Quick Start & Questions in the the README (see below)
+4. `git add` and `git commit` your local repository
+4. Push your code and README back to GitHub - `git push origin master`
+5. When you submit your cover letter, include the URL to your fork'd repository
+   - For Example `https://github.com/YOUR_USERNAME_HERE/cc-gegibgen`
 
 _Note: If you already submitted your application, ... will add instructions here._
 
