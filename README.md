@@ -32,7 +32,22 @@ What to do
 
 _Note: If you already submitted your application, ... will add instructions here._
 
-=================================
+Judging Criteria
+----------------
+
+From Most Important to Least Important:
+* Your responses to the **Coding Questions** at the bottom of this README (Most Important)
+* A clearly commented program (with URLs to source information that guided your solution)
+* test
+* test
+* test
+* test
+* A working, fully fault-tolerant program (Least Important)
+
+You may be asking yourself, why a working program is the *least* important... Remember, we don't expect you to be expert programmers ::yet::.  We want to see how you think through a problem.  Remember, this challenge is only 1 small part of the overall process.
+
+For completion by applicant
+===========================
 
 Quick Start
 -----------
