@@ -9,15 +9,15 @@ Challenge Overview
 We are exticed taht you are intsereted in joiinng the GE Soawtfre Engreeniing Appsecitnerhip Prargom.  Weoclme to yuor fsrit GE prommarging chanellge.  Yuor chnellage is to courtsnct a prrgoam taht tekas an Enilgsh txet snirtg as iupnt and rerutns rebadale giirebbsh lkie tsih.    Aoccdrnig to rscheach at Cmabrigde Uinervtisy, it dseno’t mtaetr in waht oerdr the ltteres in a wrod are, the olny iproamtnt tihng is taht the frsit and lsat ltteer be in the rghit pclae. The rset can be a taotl mses and you can sitll raed it whotuit a pboerlm.  Tihs is bcuseae the huamn mnid deos not raed ervey lteter by istlef, but the wrod as a wlohe.
 
 Other helpful information:
-* You may use any programming language of your choice
+* You may use *any* programming language... it's your choice
+* Your program should not scamble punctuation (.,-'...etc.) or numbers
 * Name your program as follows: _`gibgen.xx`_ (where xx is variable based on the language you choose)
 * Your program should be able to read text input from a plain text file passed as an argument **or** a string passed directly
    * `gibgen.xx "This is a String"`
    * `gibgen.xx -f mystringfile.txt`
    * `cat mystringfile.txt | gibgen.xx`
 
-
-Learn more about the application process [here](http://gecapital.com/sweap "SWEAP Home Page").
+This challenge is a small piece of your application.  Before you start, ensure you meet the other minimum requirements by visiting [here](http://gecapital.com/sweap "SWEAP Home Page").
 
 What to do
 ----------
@@ -38,13 +38,11 @@ Judging Criteria
 From Most Important to Least Important:
 * Your responses to the **Coding Questions** at the bottom of this README (Most Important)
 * A clearly commented program (with URLs to source information that guided your solution)
-* test
-* test
-* test
-* test
-* A working, fully fault-tolerant program (Least Important)
+* Your program generates readable, scrambled text using the supplied text file samples
+* Your program handles all punctuation and numbers correctly (i.e. not scrambled)
+* A working, fully fault-tolerant program... we just can't break it (Least Important)
 
-You may be asking yourself, why a working program is the *least* important... Remember, we don't expect you to be expert programmers ::yet::.  We want to see how you think through a problem.  Remember, this challenge is only 1 small part of the overall process.
+Finally... DO THE BEST YOU CAN!  Remember, we don't expect you to be expert programmers ::yet::  We want to see how you think through a problem.  Remember, this challenge is only 1 small part of the overall process.  Just try your best!
 
 For completion by applicant
 ===========================
