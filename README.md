@@ -1,7 +1,7 @@
 cc-gegibgen
 ===========
 
-**Code Challenge 1: Gibberish Generator**
+**Code Challenge: Gibberish Generator**
 
 Challenge Overview
 ------------------
@@ -33,7 +33,7 @@ What to do
 3. Complete the code challenge and fill out the Quick Start & Questions in the the README (see below)
 4. `git add` and `git commit` your local repository as you go
 4. Push your code and README back to GitHub occasionally - `git push origin master`
-5. When you submit your cover letter, include the Commit URL to your fork'd repository that you want reviewed
+5. When you submit your cover letter, include the Commit URL to your fork'd repository that you want reviewed. It should include at least 2 files: (1) your updated README with Coding Questions answered, and (2) your program (gibgen.xx)
    - Go here: `https://github.com/YOUR_USERNAME_HERE/cc-gegibgen/commits`
    - Find the commit that you'd like us to review, and click the "Browse Code ->" link for that commit
    - Copy and paste the URL into the cover letter... it should look something like this:
@@ -44,9 +44,7 @@ _Note: If you already submitted your application, ... will add instructions here
 Judging Criteria
 ----------------
 
-Your responses to the **Coding Questions** at the bottom of this README are the *Most Important* part of this challenge.  
-A working, fully fault-tolerant program that we just can't break, albeit awesome, is the least important.  Why is that?  
-Remember, we don't expect you to be expert programmers (just yet)... We want to see how you think through a problem.  
+Your responses to the **Coding Questions** at the bottom of this README are the *Most Important* part of this challenge. A working, fully fault-tolerant program that we just can't break, albeit awesome, is the least important.  Why is that?  Remember, we don't expect you to be expert programmers (just yet)... We want to see how you think through a problem.  
 
 Take a breath and just give it your best effort!  
 
