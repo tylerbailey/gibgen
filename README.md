@@ -6,16 +6,21 @@ cc-gegibgen
 Challenge Overview
 ------------------
 
-We are exticed taht you are intsereted in joiinng the GE Soawtfre Engreeniing Appsecitnerhip Prargom.  Weoclme to yuor fsrit GE prommarging chanellge.  Yuor chnellage is to courtsnct a prrgoam taht tekas an Enilgsh txet snirtg as iupnt and rerutns rebadale giirebbsh lkie tsih.    Aoccdrnig to rscheach at Cmabrigde Uinervtisy, it dseno’t mtaetr in waht oerdr the ltteres in a wrod are, the olny iproamtnt tihng is taht the frsit and lsat ltteer be in the rghit pclae. The rset can be a taotl mses and you can sitll raed it whotuit a pboerlm.  Tihs is bcuseae the huamn mnid deos not raed ervey lteter by istlef, but the wrod as a wlohe.
+We are exticed taht you are intsereted in joiinng the Soawtfre Engreeniing Appsecitnerhip Prargom.  Weoclme to yuor fsrit GE prommarging chanellge.  Yuor chnellage is to courtsnct a prrgoam taht tekas an Enilgsh txet snirtg as iupnt and rerutns rebadale giirebbsh lkie tihs.  It dseno’t mtaetr in waht oerdr the ltteres in a wrod are, but an iproamtnt tihng is taht the frsit and lsat ltteer be in the rghit pclae. The rset can be a taotl mses and you can sitll raed it whotuit a pboerlm.  Tihs is bcuseae the huamn mnid deos not raed ervey lteter by istlef, but the wrod as a wlohe.
 
-Other helpful information:
+The Basics:
 * You may use *any* programming language... it's your choice
-* Your program should not scamble punctuation (.,-'...etc.) or numbers
+* Your program should leave the first and last letter of each word in place and scramble the rest.
+* Your program should not scamble punctuation (.,-'...etc.), numbers, or upper-case abbreviations.  
+   * For example gibberish, see the /textfiles folder.  Two sample output files are provided: `xxx.txt.gib`
 * Name your program as follows: _`gibgen.xx`_ (where xx is variable based on the language you choose)
 * Your program should be able to read text input from a plain text file passed as an argument **or** a string passed directly
    * `gibgen.xx "This is a String"`
    * `gibgen.xx -f mystringfile.txt`
    * `cat mystringfile.txt | gibgen.xx`
+* Your program should output via STDOUT.
+
+_Note: This challenge is based on a popular word gibberish meme. You can improve the readability by looking at a [researcher's take](http://www.mrc-cbu.cam.ac.uk/people/matt.davis/cmabridge/) on the truths/myths of this meme, but this is not required._
 
 This challenge is a small piece of your application.  Before you start, ensure you meet the other minimum requirements by visiting [here](http://gecapital.com/sweap "SWEAP Home Page").
 
