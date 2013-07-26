@@ -1,3 +1,10 @@
+<!---
+GibGen Readme
+Initial Draft by Jeff Serpas
+In partnership with the University of New Orleans
+-->
+
+
 cc-gegibgen
 ===========
 
