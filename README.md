@@ -19,7 +19,7 @@ Challenge Overview
 We are exticed taht you are intsereted in joiinng the Soawtfre Engreeniing Appsecitnerhip Prargom.  Weoclme to yuor fsrit prommarging chanellge.  Yuor chnellage is to courtsnct a prrgoam taht tekas an Enilgsh txet snirtg as iupnt and rerutns rebadale giirebbsh lkie tihs.  It dseno’t mtaetr in waht oerdr the ltteres in a wrod are, but an iproamtnt tihng is taht the frsit and lsat ltteer be in the rghit pclae. The rset can be a taotl mses and you can sitll raed it whotuit a pboerlm.  Tihs is bcuseae the huamn mnid deos not raed ervey lteter by istlef, but the wrod as a wlohe.
 
 The Basics:
-* You may use *almost any* programming language... it's your choice.  [See the supported options](https://compilr.com/features#language-support).
+* You may use *almost any* programming language... it's your choice.  See the supported options [here](https://compilr.com/features#language-support) and [here](http://ideone.com/).
 * Your program should leave the first and last letter of each word in place and scramble the rest.
 * Your program should not scamble punctuation (.,-'...etc.), numbers, or upper-case abbreviations.  
    * For example gibberish, see the /textfiles folder.  Two sample output files are provided: `xxx.txt.gib`
@@ -62,7 +62,7 @@ Quick Start
 -----------
 
 * Replace this text with instructions on how to execute your program
-* What programming language and compiler version did you use? See [here](https://compilr.com/features#language-support) for the supported list.
+* What programming language did you use? See [here](https://compilr.com/features#language-support) and [here](http://ideone.com/) for the supported ones.
 * Also tell us anything else the reviewer should know about your code
 
 
