@@ -16,11 +16,10 @@ We are exticed taht you are intsereted in joiinng the Soawtfre Engreeniing Appse
 * For example gibberish, see the [/textfiles](https://gitlab.cs.uno.edu/sweap/gibgen/tree/master/textfiles) folder.  Two sample output files are provided: `xxx.txt.gib`
 
 **Input/Output:**
-* Name your program as follows: _`gibgen.xx`_ (where xx is variable based on the language you choose)
-* Your program should be able to read text input from a plain text file passed as an argument **or** a string passed directly
-    * `gibgen.xx "This is a String"`
-    * `gibgen.xx -f mystringfile.txt`
-    * `cat mystringfile.txt | gibgen.xx`
+* Name your program as follows: `gibgen.xx` (where xx is variable based on the language you choose)
+* Your program should be able to read text input from a string passed into STDIN
+      * `gibgen.xx "This is a String"`
+      * `cat mystringfile.txt | gibgen.xx`
 * Your program should output to the console.
 
 _Note: This challenge is based on a popular word gibberish meme. You can improve the readability by looking at a [researcher's take](http://www.mrc-cbu.cam.ac.uk/people/matt.davis/cmabridge/) on the truths/myths of this meme, but this is not required._
