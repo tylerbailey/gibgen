@@ -1,4 +1,4 @@
-<!---
+<!--
 GibGen Readme
 Initial Draft by Jeff Serpas
 In partnership with the University of New Orleans
@@ -13,7 +13,7 @@ cc-gegibgen
 Challenge Overview
 ------------------
 
-**Your response to this challenge can be used to supplement your SWEAP application.  If you plan to complete this challenge for SWEAP, ensure you meet the other minimum requirements by visiting [here](http://gecapital.com/sweap "SWEAP Home Page").  Whether you apply or not, you are welcome to fork this code and complete as a personal project challenge.**
+**Your response to this challenge can be used to supplement your SWEAP application.  If you plan to complete this challenge for SWEAP, ensure you meet the other minimum requirements by visiting [here](http://gecapital.com/sweap "SWEAP Home Page").  Whether you apply or not, you are welcome to clone this repository and complete as a personal project challenge.**
 
 
 We are exticed taht you are intsereted in joiinng the Soawtfre Engreeniing Appsecitnerhip Prargom.  Weoclme to yuor fsrit prommarging chanellge.  Yuor chnellage is to courtsnct a prrgoam taht tekas an Enilgsh txet snirtg as iupnt and rerutns rebadale giirebbsh lkie tihs.  It dseno’t mtaetr in waht oerdr the ltteres in a wrod are, but an iproamtnt tihng is taht the frsit and lsat ltteer be in the rghit pclae. The rset can be a taotl mses and you can sitll raed it whotuit a pboerlm.  Tihs is bcuseae the huamn mnid deos not raed ervey lteter by istlef, but the wrod as a wlohe.
@@ -36,15 +36,15 @@ What to do
 ----------
 1. [Download](http://git-scm.com/downloads) & install Git on your machine
 2. [Fork](https://help.github.com/articles/fork-a-repo) this project
-2. Clone your new fork'd repository to your local machine - `git clone https://github.com/YOUR_USERNAME_HERE/cc-gegibgen.git`
+2. Clone your new fork'd repository to your local machine - `git clone https://gitlab.cs.uno.edu/YOUR_USERNAME_HERE/gibgen.git`
 3. Complete the code challenge and fill out the Quick Start & Questions in the the README (see below)
 4. `git add` and `git commit` your local repository as you go
-4. Push your code and README back to GitHub occasionally - `git push origin master`
-5. When you submit your cover letter, include the Commit URL to your fork'd repository that you want reviewed. It should include at least 2 files: (1) your updated README with Coding Questions answered, and (2) your program (gibgen.xx)
-   - Go here: `https://github.com/YOUR_USERNAME_HERE/cc-gegibgen/commits`
+4. Push your code and README back to UNO's GitLab occasionally - `git push origin master`
+5. Email GECapital.SWEAP@ge.com with the Commit URL to your fork'd repository that you want reviewed. It should include at least 2 files: (1) your updated README with Coding Questions answered, and (2) your program (gibgen.xx)
+   - Go here: `https://gitlab.cs.uno.edu/YOUR_USERNAME_HERE/gibgen/commits`
    - Find the commit that you'd like us to review, and click the "Browse Code ->" link for that commit
    - Copy and paste the URL into the cover letter... it should look something like this:
-       - `https://github.com/YOUR_USERNAME_HERE/cc-gegibgen/tree/73f0c8e2...hash.hash.hash...e804a72b6`
+       - `https://gitlab.cs.uno.edu/YOUR_USERNAME_HERE/cc-gegibgen/tree/73f0c8e2...hash.hash.hash...e804a72b6`
 
 _Note: If you already submitted your application, ... will add instructions here._
 
@@ -74,8 +74,3 @@ Question 1: "How did you approach the problem?" (500 words or less)
 
 
 Question 2: "What was the most difficult aspect of the solution?" (500 words or less)
-
-
-
-
-
