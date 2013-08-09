@@ -9,11 +9,11 @@ Challenge Overview
 
 We are exticed taht you are intsereted in joiinng the Soawtfre Engreeniing Appsecitnerhip Prargom.  Weoclme to yuor fsrit prommarging chanellge.  Yuor chnellage is to courtsnct a prrgoam taht tekas an Enilgsh txet snirtg as iupnt and rerutns rebadale giirebbsh lkie tihs.  It dseno’t mtaetr in waht oerdr the ltteres in a wrod are, but an iproamtnt tihng is taht the frsit and lsat ltteer be in the rghit pclae. The rset can be a taotl mses and you can sitll raed it whotuit a pboerlm.  Tihs is bcuseae the huamn mnid deos not raed ervey lteter by istlef, but the wrod as a wlohe.
 
-The Basics:
+**The Basics:**
 * You may use *almost any* programming language... it's your choice.  See the supported options [here](https://compilr.com/features#language-support) and [here](http://ideone.com/).
 * Your program should leave the first and last letter of each word in place and scramble the rest.
 * Your program should not scamble punctuation (.,-'...etc.), numbers, or upper-case abbreviations.  
-   * For example gibberish, see the /textfiles folder.  Two sample output files are provided: `xxx.txt.gib`
+* For example gibberish, see the [/textfiles](https://gitlab.cs.uno.edu/sweap/gibgen/tree/master/textfiles) folder.  Two sample output files are provided: `xxx.txt.gib`
 * Name your program as follows: _`gibgen.xx`_ (where xx is variable based on the language you choose)
 * Your program should be able to read text input from a plain text file passed as an argument **or** a string passed directly
    * `gibgen.xx "This is a String"`
