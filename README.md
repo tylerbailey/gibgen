@@ -48,7 +48,6 @@ Judging Criteria
 
 Your responses to the **Coding Questions** at the bottom of this README are the *Most Important* part of this challenge. A working, fully fault-tolerant program that we just can't break, albeit awesome, is the least important.  Why is that?  Remember, we don't expect you to be expert programmers (just yet)... We want to see how you think through a problem.  
 
-GitHub is a public platform (meaning your solution is publicly viewable... so is everyone else;s solution).  Show your integrity and don't copy.  Copying is not cool!  
 
 For completion by applicant
 ===========================
