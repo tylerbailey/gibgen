@@ -33,10 +33,11 @@ What to do
 4. `git add` and `git commit` your local repository as you go
 4. Push your code and README back to UNO's GitLab occasionally - `git push origin master`
 5. Email GECapital.SWEAP@ge.com with the Commit URL to your fork'd repository that you want reviewed. It should include at least 2 files: (1) your updated README with Coding Questions answered, and (2) your program (gibgen.xx)
-   - Go here: `https://gitlab.cs.uno.edu/YOUR_USERNAME_HERE/gibgen/commits`
+   - Grant the "SWEAP" user "Reporter"-level access to your repository by going to Project Settings --> Members
+   - Go here: `https://gitlab.cs.uno.edu/YOUR_USERNAME_HERE/gibgen/commits/master`
    - Find the commit that you'd like us to review, and click the "Browse Code ->" link for that commit
    - Copy and paste the URL into the cover letter... it should look something like this:
-       - `https://gitlab.cs.uno.edu/YOUR_USERNAME_HERE/cc-gegibgen/tree/73f0c8e2...hash.hash.hash...e804a72b6`
+       - `https://gitlab.cs.uno.edu/YOUR_USERNAME_HERE/gibgen/tree/73afe0c8fe2...hash.hash...e80afea72b6`
 
 _Note: If you already submitted your application, ... will add instructions here._
 
