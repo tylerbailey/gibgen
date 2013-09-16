@@ -26,14 +26,11 @@ We are exticed taht you are intsereted in joiinng the Soawtfre Engreeniing Appse
 
 _Note: This challenge is based on a popular word gibberish meme. You can improve the readability by looking at a [researcher's take](http://www.mrc-cbu.cam.ac.uk/people/matt.davis/cmabridge/) on the truths/myths of this meme, but this is not required._
 
-<a href="https://gitlab.cs.uno.edu/sweap/gibgen/fork" class="btn grouped" data-method="POST" rel="nofollow" title="Fork">Fork</a>
-
-
 What to do
 ----------
 1. [Download](http://git-scm.com/downloads) & install Git on your machine
 
-2. <a href="/sweap/gibgen/fork" class="btn grouped" data-method="POST" rel="nofollow" title="Fork">Fork</a> this project
+2. <a href="https://gitlab.cs.uno.edu/sweap/gibgen/fork" class="btn grouped" data-method="POST" rel="nofollow" title="Fork">Fork</a> this project - Go [here](https://gitlab.cs.uno.edu/sweap/gibgen) and click "Fork"
 
 2. Clone your new fork'd repository to your local machine - `git clone https://gitlab.cs.uno.edu/YOUR_USERNAME_HERE/gibgen.git`
 3. Complete the code challenge and fill out the Quick Start & Questions in the the README (see below)
@@ -61,7 +58,7 @@ Quick Start
 -----------
 
 * Replace this text with instructions on how to execute your program
-* What programming language did you use? See [here](https://compilr.com/features#language-support) and [here](http://ideone.com/) for the supported ones.
+* What programming language did you use? See [here](http://ideone.com/) for the supported ones.
 * Also tell us anything else the reviewer should know about your code
 
 
