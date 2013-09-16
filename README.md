@@ -29,7 +29,7 @@ _Note: This challenge is based on a popular word gibberish meme. You can improve
 What to do
 ----------
 1. [Download](http://git-scm.com/downloads) & install Git on your machine
-2. [Fork](https://help.github.com/articles/fork-a-repo) this project
+2. [Fork](https://gitlab.cs.uno.edu/sweap/gibgen/fork) this project
 2. Clone your new fork'd repository to your local machine - `git clone https://gitlab.cs.uno.edu/YOUR_USERNAME_HERE/gibgen.git`
 3. Complete the code challenge and fill out the Quick Start & Questions in the the README (see below)
 4. `git add` and `git commit` your local repository as you go
