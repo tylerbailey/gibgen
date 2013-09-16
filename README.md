@@ -26,11 +26,14 @@ We are exticed taht you are intsereted in joiinng the Soawtfre Engreeniing Appse
 
 _Note: This challenge is based on a popular word gibberish meme. You can improve the readability by looking at a [researcher's take](http://www.mrc-cbu.cam.ac.uk/people/matt.davis/cmabridge/) on the truths/myths of this meme, but this is not required._
 
+<a href="/sweap/gibgen/fork" class="btn grouped" data-method="POST" rel="nofollow" title="Fork">Fork</a>
+
+
 What to do
 ----------
 1. [Download](http://git-scm.com/downloads) & install Git on your machine
 
-2. [Fork](<a href="/sweap/gibgen/fork" class="btn grouped" data-method="POST" rel="nofollow" title="Fork">)<i class='icon-code-fork'></i>Fork</a> this project
+2. <a href="/sweap/gibgen/fork" class="btn grouped" data-method="POST" rel="nofollow" title="Fork">Fork</a> this project
 
 2. Clone your new fork'd repository to your local machine - `git clone https://gitlab.cs.uno.edu/YOUR_USERNAME_HERE/gibgen.git`
 3. Complete the code challenge and fill out the Quick Start & Questions in the the README (see below)
