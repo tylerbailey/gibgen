@@ -30,7 +30,7 @@ What to do
 ----------
 1. [Download](http://git-scm.com/downloads) & install Git on your machine
 
-2. <a href="https://gitlab.cs.uno.edu/sweap/gibgen/fork" class="btn grouped" data-method="POST" rel="nofollow" title="Fork">Fork</a> this project - Go [here](https://gitlab.cs.uno.edu/sweap/gibgen) and click "Fork"
+2. <a href="https://gitlab.cs.uno.edu/sweap/gibgen/fork" class="btn grouped" data-method="POST" rel="nofollow" title="Fork">Fork</a> this project - Go [here](https://gitlab.cs.uno.edu/sweap/gibgen) and click the "Fork" button (located on the upper-right side of the screen)
 
 2. Clone your new fork'd repository to your local machine - `git clone https://gitlab.cs.uno.edu/YOUR_USERNAME_HERE/gibgen.git`
 3. Complete the code challenge and fill out the Quick Start & Questions in the the README (see below)
