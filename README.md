@@ -38,8 +38,9 @@ What to do
 4. Push your code and README back to UNO's GitLab occasionally - `git push origin master`
 5. Email GECapital.SWEAP@ge.com with the Commit URL to your fork'd repository that you want reviewed. It should include at least 2 files: (1) your updated README with Coding Questions answered, and (2) your program (gibgen.xx)
    - Grant the "SWEAP" user "MASTER"-level access to your repository via Settings - `https://gitlab.cs.uno.edu/YOUR_USERNAME_HERE/gibgen/team`
-   - Go here: `https://gitlab.cs.uno.edu/YOUR_USERNAME_HERE/gibgen/commits/master`
-   - Find the commit that you'd like us to review, and click the "Browse Code ->" link for that commit
+   - Then go here: `https://gitlab.cs.uno.edu/YOUR_USERNAME_HERE/gibgen/commits/master`
+   - Find the commit that you'd like us to review.  _The commit date must be on or before 11:59pm (central) on Nov-10!_
+       - Click the "Browse Code ->" link for that commit
    - Copy and paste the URL into the email along with your name... it should look something like this:
        - `https://gitlab.cs.uno.edu/YOUR_USERNAME_HERE/gibgen/tree/73afe0c8fe2...hash.hash...e80afea72b6`
 
