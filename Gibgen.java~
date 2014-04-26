@@ -1,0 +1,197 @@
+import java.io.*;
+import java.util.Random;
+import java.util.Scanner;
+
+/**
+ * @author:              Tyler Bailey
+ * @date:                4/25/13
+ * @name:                Gibgen
+ * @description:         A console program that reads a string StndIn and gives me
+ *                       gives me a sweet job in return
+ * @ver:                 1.0
+ **/
+public class Gibgen{
+  
+ /**
+   * @description:       The main method to start the program
+   * @requires:          input on stdin
+   * @ensures:           the program starts 
+   **/
+  public static void main(String[] argv){     
+    Gibgen gibgen = new Gibgen();
+    gibgen.start();
+  }
+  
+   /**
+   * @description:       A constructor for this
+   * @requires:          none
+   * @ensures:           a new instance of this is created
+   **/
+  public Gibgen(){
+    
+  }
+  
+   /**
+   * @description:       Method to start the gibberish generation
+   * @requires:          input on stdin
+   * @ensures:           returns the given input as gibberish in the console
+   **/
+  public void start(){
+    StringBuilder input = new StringBuilder();
+    try{
+      Scanner scanner = new Scanner(System.in);
+      String token;
+      
+      while(scanner.hasNext()){
+        token = scanner.next();
+        //Only perform the swap when the word is larger than 3 characters
+        //and is not an uppercase abbreviation 
+        if(lengthWithoutPunctuation(token) > 3 && !isAbbreviation(token)){
+          token = swapLetters(token); 
+        }
+        input.append(" " + token + " ");
+      }
+      System.out.println(input.toString());
+    }
+    catch(Exception e){
+      System.out.println(e.getMessage());
+    }
+  }
+  
+   /**
+   * @description:       The length of a given token without any leading
+   *                     or trailing punctuation
+   * @requires:          
+   * @ensures:           
+   **/
+  public int lengthWithoutPunctuation(String word){
+    String wordWithoutPunctuation = removeNonletters(word);
+    return wordWithoutPunctuation.length();
+  }
+  
+  /**
+   * @description:       Checks to see if a string contains all capital
+   *                     letters or not
+   * @requires:          String is atleast atleast one character in length
+   * @ensures:           Returns true if all characters are uppercase, else
+   *                     returns false
+   **/
+  public boolean isAbbreviation(String word){
+    boolean abbreviation = true;
+    String wordWithoutPunctuation = removeNonletters(word);
+ 
+    for(int i = 0; i < wordWithoutPunctuation.length(); i++){
+      if(Character.isLowerCase(wordWithoutPunctuation.charAt(i))){
+        abbreviation = false;
+        i = wordWithoutPunctuation.length();
+      }
+    }
+    return abbreviation;
+  }
+  
+  /**
+   * @description:       Determines if the given character is a letter or not
+   * @requires:          One character
+   * @ensures:           Returns true if the character is an alphabet letter,
+   *                     else returns false
+   **/
+  public boolean isLetter(char character){
+    boolean isLetter = false;
+    if((character >= 'a' && character <= 'z') || (character >= 'A' && character <= 'Z')){
+      isLetter = true;
+    }
+    return isLetter;
+  }
+  
+  /**
+   * @description:       Swappes the letters of a given word ignoring punctuation and numbers
+   * @requires:          A word of atleast 3 characters excluding punctuation and numbers
+   * @ensures:           returns a word with the possibility of any letter except the first and
+   *                     last being swapped in the word.
+   **/
+  public String swapLetters(String word){
+    String head, tail;
+    StringBuilder body;
+    char currentCharacter, swappedCharacter;
+    int swapIndex;
+    
+    head = word.substring(0, findFirstLetter(word)+1);
+    tail = word.substring(findLastLetter(word), word.length());
+    body = new StringBuilder(word.substring(findFirstLetter(word)+1,findLastLetter(word)));  
+    
+    for(int i = 0; i < body.length(); i++){
+      currentCharacter = body.charAt(i);
+      if(isLetter(currentCharacter)){
+        swapIndex = findSwapIndex(body, i);
+        swappedCharacter = body.charAt(swapIndex);
+        body.setCharAt(swapIndex, currentCharacter);
+        body.setCharAt(i, swappedCharacter);
+      }  
+    }
+    return  head + body.toString() + tail;
+  }
+  
+  /**
+   * @description:       Finds a suitable index to swap a letter at
+   * @requires:          body be a word with atleast 2 characters and
+   *                     current index be a positive integer between 0 and 
+   *                     body.length()-1 
+   * @ensures:           Returns an integer that is an index different from the
+   *                     currentIndex and between 0 and body.length()-1
+   **/
+  private int findSwapIndex(StringBuilder body, int currentIndex){
+    Random random = new Random();
+    int validSwap = random.nextInt(body.length()-1);
+    
+    while(isLetter(body.charAt(validSwap)) == false && validSwap != currentIndex){
+      validSwap = random.nextInt(body.length()-1);
+    } 
+    return validSwap;
+  }
+  
+   /**
+   * @description:       Finds the first occurene of a letter character
+   * @requires:          given word must contain at least one letter character
+   * @ensures:           returns the index of the first letter occurence
+   **/
+  public int findFirstLetter(String word){
+    int firstLetter = 0;
+    for(int i = 0; i < word.length(); i++){
+      if(isLetter(word.charAt(i))){
+        firstLetter = i;
+        i = word.length();
+      }  
+    }
+    return firstLetter;
+  }
+  
+   /**
+   * @description:       Finds the last occurence of a letter character
+   *                     in a given word and returns its index
+   * @requires:          given word must contain at least one letter character
+   * @ensures:           returns the index of the last letter character
+   **/
+    public int findLastLetter(String word){
+      int lastLetter = word.length()-1;
+      for(int i = word.length()-1; i > -1; i--){
+        if(isLetter(word.charAt(i))){
+        lastLetter = i;
+        i = -1;
+        }
+      }
+      return lastLetter;
+    }
+      
+   /**
+   * @description:       Strips the leading and trailing nonletter characters
+   * @requires:          word != null                   
+   * @ensures:           returns a word without leading and trailing 
+   *                     nonletter characters
+   **/
+    public String removeNonletters(String word){
+      return word.substring(findFirstLetter(word),findLastLetter(word)+1);     
+    }
+   
+  
+  
+}
