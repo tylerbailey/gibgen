@@ -6,8 +6,8 @@ import java.util.Scanner;
  * @author:              Tyler Bailey
  * @date:                4/25/13
  * @name:                Gibgen
- * @description:         A console program that reads a string StndIn and gives me
- *                       gives me a sweet job in return
+ * @description:         A console program that reads a string StndIn or as
+ *                       an arg and returns gibberish
  * @ver:                 1.0
  **/
 public class Gibgen{
@@ -21,18 +21,22 @@ public class Gibgen{
     Gibgen gibgen = new Gibgen();
     try{
     if((System.in.available() > 0) && (argv.length > 0))
-      System.out.println("Please give input either over stdin or as an argument, not both");
+      System.out.println("Please give input either over stdin or as an " + 
+                         "argument, not both");
      else if(System.in.available() > 0)
        gibgen.readFromFile();
      else if(argv.length > 0)
        gibgen.readFromArg(argv[0]);
      else{
-       System.out.println("You must provide a file over stndin or a string as an argument");
-       System.out.println("Example: 'cat myfile.txt | java Gibgen', 'java Gibgen \"This is a sentence\"'");
+       System.out.println("You must provide a file over stndin or a string" + 
+                          " as an argument");
+       System.out.println("Example: 'cat myfile.txt | java Gibgen', 'java " + 
+                          "Gibgen \"This is a sentence\"'");
      }
     }
     catch(Exception e){
-      System.out.println("OH GOD YOU CAUSED SOME SORT OF ERROR OVER STNDIN, ABANDON SHIP");
+      System.out.println("OH GOD YOU CAUSED SOME SORT OF ERROR OVER STNDIN, " +
+                         "ABANDON SHIP");
     }
   }
   
@@ -74,7 +78,7 @@ public class Gibgen{
   
    /**
    * @description:       Method to start the gibberish generation from arg string
-   * @requires:          input on stdin
+   * @requires:          input as a arg 
    * @ensures:           returns the given input as gibberish in the console
    **/
   public void readFromArg(String arg){
@@ -141,16 +145,20 @@ public class Gibgen{
    **/
   public boolean isLetter(char character){
     boolean isLetter = false;
-    if((character >= 'a' && character <= 'z') || (character >= 'A' && character <= 'Z')){
+    if((character >= 'a' && character <= 'z') || 
+       (character >= 'A' && character <= 'Z')){
       isLetter = true;
     }
     return isLetter;
   }
   
   /**
-   * @description:       Swappes the letters of a given word ignoring punctuation and numbers
-   * @requires:          A word of atleast 3 characters excluding punctuation and numbers
-   * @ensures:           returns a word with the possibility of any letter except the first and
+   * @description:       Swaps the letters of a given word ignoring 
+   *                     punctuation and numbers
+   * @requires:          A word greater than 3 characters excluding 
+   *                     punctuation and numbers
+   * @ensures:           returns a word with the possibility of any 
+   *                     letter except the first and
    *                     last being swapped in the word.
    **/
   public String swapLetters(String word){
@@ -161,7 +169,8 @@ public class Gibgen{
     
     head = word.substring(0, findFirstLetter(word)+1);
     tail = word.substring(findLastLetter(word), word.length());
-    body = new StringBuilder(word.substring(findFirstLetter(word)+1,findLastLetter(word)));  
+    body = new StringBuilder(word.substring(findFirstLetter(word)+1,
+                                            findLastLetter(word)));  
     
     for(int i = 0; i < body.length(); i++){
       currentCharacter = body.charAt(i);
@@ -194,7 +203,7 @@ public class Gibgen{
   }
   
    /**
-   * @description:       Finds the first occurene of a letter character
+   * @description:       Finds the first occurence of a letter character
    * @requires:          given word must contain at least one letter character
    * @ensures:           returns the index of the first letter occurence
    **/

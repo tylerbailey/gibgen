@@ -14,7 +14,7 @@ public class Gibgen{
   
  /**
    * @description:       The main method to start the program
-   * @requires:          input on stdin
+   * @requires:          input on stdin or a string as an argument
    * @ensures:           the program starts 
    **/
   public static void main(String[] argv){     
