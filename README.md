@@ -57,9 +57,14 @@ For completion by applicant
 Quick Start
 -----------
 
-* Replace this text with instructions on how to execute your program
-* What programming language did you use? See [here](http://ideone.com/) for the supported ones.
+* The program can be run either of the following ways
+	filename | java Gibgen
+	java Gibgen "my sentence to scramble"
+* What programming language did you use? 
+	I used Java
 * Also tell us anything else the reviewer should know about your code
+	Not that I can think of. 
+	
 
 
 Coding Questions
@@ -67,6 +72,29 @@ Coding Questions
 
 Question 1: "How did you approach the problem?" (500 words or less)
 
-
+	My first step in my solution was to read the design specifications carefully and a 
+	few times. They left a little to be desired, but I figured they were that way to
+	see how we would handle the problem. Besides, nobody ever gets perfect design 
+	specifications from a customer. More importantly, the document provided enough to 
+	get started. Next, I thought about what exactly would happen when a word would get 
+	gib'd. I came to the conclusion that there would need to be at least 4 characters to
+	actually do a swap, the two outside and two inner that could be exchanged. 
+	I then wrote a method that would do this. After completing it, I started 
+	thinking about the basic criteria that would prevent a word from getting and made 
+	methods to check those conditions. Once I had the smaller peices of the puzzle, I 
+	worked on the reading of strings from stdin or as a arg based on the example in the 
+	design specs. Last, I went through the code and did some refactoring and testing of
+	methods and the program as a whole. Minor changes were made based on the example 
+	gib'd text included in the repo. 
+	
 
 Question 2: "What was the most difficult aspect of the solution?" (500 words or less)
+
+	I found thinking about all of the possible cases with a string token to be the most 
+	difficult part. For example, what if a token has a period at the end of it, or what if
+	a token is an upper case abbreviation but has an apostrophy and an 's' at the end. The
+	algorithm for scrambling the words was the easiest part. The examples text files
+	proved very helpful for fine tunning the solution. Also deciding if I should account
+	for grammatical mistakes was another problem. For example, what if someone used
+	ellipses and didn't put a space between them and the preceding word or what if 
+	someone didn't put a space after a period ending a sentence. 

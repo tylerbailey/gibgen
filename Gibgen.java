@@ -14,12 +14,26 @@ public class Gibgen{
   
  /**
    * @description:       The main method to start the program
-   * @requires:          input on stdin
+   * @requires:          input on stdin or a string as an argument
    * @ensures:           the program starts 
    **/
   public static void main(String[] argv){     
     Gibgen gibgen = new Gibgen();
-    gibgen.start();
+    try{
+    if((System.in.available() > 0) && (argv.length > 0))
+      System.out.println("Please give input either over stdin or as an argument, not both");
+     else if(System.in.available() > 0)
+       gibgen.readFromFile();
+     else if(argv.length > 0)
+       gibgen.readFromArg(argv[0]);
+     else{
+       System.out.println("You must provide a file over stndin or a string as an argument");
+       System.out.println("Example: 'cat myfile.txt | java Gibgen', 'java Gibgen \"This is a sentence\"'");
+     }
+    }
+    catch(Exception e){
+      System.out.println("OH GOD YOU CAUSED SOME SORT OF ERROR OVER STNDIN, ABANDON SHIP");
+    }
   }
   
    /**
@@ -32,11 +46,11 @@ public class Gibgen{
   }
   
    /**
-   * @description:       Method to start the gibberish generation
+   * @description:       Method to start the gibberish generation from stdin 
    * @requires:          input on stdin
    * @ensures:           returns the given input as gibberish in the console
    **/
-  public void start(){
+  public void readFromFile(){
     StringBuilder input = new StringBuilder();
     try{
       Scanner scanner = new Scanner(System.in);
@@ -59,6 +73,32 @@ public class Gibgen{
   }
   
    /**
+   * @description:       Method to start the gibberish generation from arg string
+   * @requires:          input on stdin
+   * @ensures:           returns the given input as gibberish in the console
+   **/
+  public void readFromArg(String arg){
+    StringBuilder input = new StringBuilder();
+    try{
+      Scanner scanner = new Scanner(arg);
+      String token;
+      
+      while(scanner.hasNext()){
+        token = scanner.next();
+        //Only perform the swap when the word is larger than 3 characters
+        //and is not an uppercase abbreviation 
+        if(lengthWithoutPunctuation(token) > 3 && !isAbbreviation(token)){
+          token = swapLetters(token); 
+        }
+        input.append(" " + token + " ");
+      }
+      System.out.println(input.toString());
+    }
+    catch(Exception e){
+      System.out.println(e.getMessage());
+    }
+  }
+   /**
    * @description:       The length of a given token without any leading
    *                     or trailing punctuation
    * @requires:          
@@ -70,25 +110,29 @@ public class Gibgen{
   }
   
   /**
-   * @description:       Checks to see if a string contains all capital
-   *                     letters or not
+   * @description:       Checks to see if a string is an uppercase abbreviation
+   *                     by checking for at least 2 connsecutive uppercase letters.
+   *                     This way abbreviations with prefixes or suffixes can be
+   *                     detected such as UNO's or pre-GE. 
    * @requires:          String is atleast atleast one character in length
    * @ensures:           Returns true if all characters are uppercase, else
    *                     returns false
    **/
   public boolean isAbbreviation(String word){
-    boolean abbreviation = true;
+   int count = 0;
     String wordWithoutPunctuation = removeNonletters(word);
  
-    for(int i = 0; i < wordWithoutPunctuation.length(); i++){
-      if(Character.isLowerCase(wordWithoutPunctuation.charAt(i))){
-        abbreviation = false;
-        i = wordWithoutPunctuation.length();
+    for(int i = 0; i < wordWithoutPunctuation.length() && count < 2; i++){
+      if(Character.isUpperCase(wordWithoutPunctuation.charAt(i))){
+        count++;
+        }
+      else{
+        count = 0;
       }
     }
-    return abbreviation;
+    return count >= 2;
   }
-  
+   
   /**
    * @description:       Determines if the given character is a letter or not
    * @requires:          One character
@@ -190,8 +234,5 @@ public class Gibgen{
    **/
     public String removeNonletters(String word){
       return word.substring(findFirstLetter(word),findLastLetter(word)+1);     
-    }
-   
-  
-  
+    } 
 }
